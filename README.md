@@ -1,4 +1,4 @@
-# Swift100Project2 -- Tap Or Hold Counter
+# Swift100Project4 -- Alamofire & SwiftyJSON
 
 [id1]:https://medium.com/@sunnyleeyun/swift-100-days-project-4-alamofire-swiftyjson-2b23f4b678c0
 
