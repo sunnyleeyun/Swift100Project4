@@ -12,6 +12,7 @@
 		0485CA7C1F99E2D900846C06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0485CA7A1F99E2D900846C06 /* Main.storyboard */; };
 		0485CA7E1F99E2D900846C06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0485CA7D1F99E2D900846C06 /* Assets.xcassets */; };
 		0485CA811F99E2D900846C06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0485CA7F1F99E2D900846C06 /* LaunchScreen.storyboard */; };
+		0485CA891F99EC2B00846C06 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485CA881F99EC2B00846C06 /* ViewControllerTableViewCell.swift */; };
 		75E0B51C1AA3C9EB9ED9109C /* Pods_Project4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E493646D25B10F79C75F96 /* Pods_Project4.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		0485CA7D1F99E2D900846C06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0485CA801F99E2D900846C06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0485CA821F99E2D900846C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0485CA881F99EC2B00846C06 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		43699A97202E4CC572866EB5 /* Pods-Project4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project4.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project4/Pods-Project4.release.xcconfig"; sourceTree = "<group>"; };
 		76E493646D25B10F79C75F96 /* Pods_Project4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCCC66D05F39CD6F57F9CB77 /* Pods-Project4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project4/Pods-Project4.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				0485CA7D1F99E2D900846C06 /* Assets.xcassets */,
 				0485CA7F1F99E2D900846C06 /* LaunchScreen.storyboard */,
 				0485CA821F99E2D900846C06 /* Info.plist */,
+				0485CA881F99EC2B00846C06 /* ViewControllerTableViewCell.swift */,
 			);
 			path = Project4;
 			sourceTree = "<group>";
@@ -167,10 +170,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Project4/Pods-Project4-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -219,6 +224,7 @@
 			files = (
 				0485CA791F99E2D900846C06 /* ViewController.swift in Sources */,
 				0485CA771F99E2D900846C06 /* AppDelegate.swift in Sources */,
+				0485CA891F99EC2B00846C06 /* ViewControllerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
