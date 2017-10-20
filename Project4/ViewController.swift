@@ -18,6 +18,9 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    tableView.delegate = self
+    tableView.dataSource = self
+    tableView.rowHeight = 60
     getData()
   }
 
@@ -47,3 +50,18 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: UITableViewDelegate, UITableViewDataSource{
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return arr.count
+  }
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
+    var dict = arr[indexPath.row]
+    cell.name.text = dict["name"] as? String
+    cell.email.text = dict["email"] as? String
+    
+    return cell
+  }
+  
+  
+}
